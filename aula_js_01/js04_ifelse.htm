@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset-utf-8">
+    <title>js04_ifelse.htm</title>
+</head>
+<body>
+    <script>
+        /* Objetivo: Ler dois valores, independentemente da ordem em que foram digitados e apresentá-los em ordem crescente.
+        Com a utilização da decisão condicional composta (if..else), não há mais necessidade de definir uma terceira variável.
+        */
+
+        var js_n1;
+        var js_n2;
+
+        js_n1 = parseInt(window.prompt('Informe o valor do primeiro número: '));
+        js_n2 = parseInt(window.prompt('Informe o valor do segundo número: '));
+
+        document.write('Primeiro número digitado = ' + js_n1);
+        document.write('<br>Segundo número digitado = ' + js_n2);
+
+        if(js_n1 > js_n2){
+            document.write('<p><b>Classificação em Ordem Crescente:</b> ' + js_n1 + ' e ' + js_n2);
+        }
+        else{
+            document.write('<p><b>Classificação em Ordem Crescente:</b> '+ js_n2 + ' e ' + js_n1);
+        }
+
+    </script>
+</body>
+</html>
