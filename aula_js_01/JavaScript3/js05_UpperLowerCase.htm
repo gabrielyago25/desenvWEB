@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js05_UpperLowerCase.htm - conversão de string</title>
+</head>
+<body>
+    <h3>Formul&aacute;rio de consulta de curso:</h3>
+    <p>
+        <form name="formcurso" action="" method="POST">
+            Digite seu Curso: <input type="text" name="f_cursodig" size="8" maxlength="4"/> (SIST) <p></p>
+            <input type="button" name="btn_validar" value="Validar" onclick="cadcurso()" />
+            <input type="reset" name="btn_cancelar" value="Cancelar" /><p></p>
+            C&oacute;odigo do Curso: <input type="text" name="f_codcurso" size="15" maxlength="10" />
+        </form>
+    </p>
+    <script>
+    var js_cursodig;
+    function cadcurso(){
+        js_cursodig = document.formcurso.f_cursodig.value;
+        if (js_cursodig.toUpperCase()='SIST'){
+            document.formcurso.f_codcurso.value='SIST001/FB';
+        }
+        else{
+            window.alert('Curso Inv\u00E1lido!');
+        }
+    }
+    </script>
+</body>
+</html>
